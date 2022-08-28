@@ -1,0 +1,12 @@
+@mixin flex-box ($dir, $js, $ai) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $js;
+  align-items: $ai;
+}
+
+@mixin base-box  ($height, $width, $color){
+  height: $height;
+  width: $width;
+  background-color: $color;
+}

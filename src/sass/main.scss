@@ -1,0 +1,21 @@
+@import "reset";
+@import "mixins";
+@import "constants";
+@import "typography";
+@import "base";
+
+body{
+  background-color: $main-color;
+
+  @include flex-box (column, center, center);
+
+  .outer {
+    @include base-box (30rem, 30rem, $secondary-color);
+    @include flex-box ( $dir: coloumn, $js: center, $ai: center);
+  
+    .inner {
+      @include base-box (20rem, 20rem, $extra-color);
+      @include flex-box ($dir: center, $js: center, $ai: center);
+    }
+  }
+}
